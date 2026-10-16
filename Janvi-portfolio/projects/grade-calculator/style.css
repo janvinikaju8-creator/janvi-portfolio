@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8e7ff, #f8f9fa);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.calculator {
+    background-color: white;
+    width: 100%;
+    max-width: 520px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #5148d8;
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+#grade-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #6c63ff;
+    border-color: transparent;
+}
+
+#grade-form button {
+    margin-top: 15px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#grade-form button:hover {
+    background-color: #5148d8;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f5f5ff;
+    border: 1px solid #e0e0ff;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+#result h2 {
+    color: #5148d8;
+    margin-bottom: 10px;
+}
+
+#result p {
+    overflow-wrap: anywhere;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #5148d8;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+    .calculator {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
